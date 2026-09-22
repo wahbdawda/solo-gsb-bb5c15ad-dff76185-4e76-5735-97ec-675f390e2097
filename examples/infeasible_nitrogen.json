@@ -1,0 +1,23 @@
+{
+  "name": "氮不足-不可行示例",
+  "stocks": [
+    {
+      "name": "A液",
+      "concentrations": {"N": 5000.0, "Ca": 10000.0},
+      "available_volume": 0.5
+    },
+    {
+      "name": "B液",
+      "concentrations": {"P": 3000.0, "K": 15000.0},
+      "available_volume": 5.0
+    }
+  ],
+  "targets": {
+    "N":  {"target": 150.0, "abs_tolerance": 0.0},
+    "P":  {"target": 50.0,  "abs_tolerance": 0.0},
+    "K":  {"target": 210.0, "abs_tolerance": 0.0},
+    "Ca": {"target": 200.0, "abs_tolerance": 0.0}
+  },
+  "target_volume": 100.0,
+  "max_deviation": 0.05
+}

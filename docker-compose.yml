@@ -1,0 +1,15 @@
+services:
+  api:
+    build: .
+    image: hydroponic-nutrient-api:latest
+    container_name: hydroponic-nutrient-api
+    ports:
+      - "8000:8000"
+    volumes:
+      - nutrient-data:/data
+    environment:
+      NUTRIENT_DB: /data/nutrient.db
+    restart: unless-stopped
+
+volumes:
+  nutrient-data:

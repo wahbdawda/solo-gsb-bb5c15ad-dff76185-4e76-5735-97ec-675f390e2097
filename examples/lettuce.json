@@ -1,0 +1,34 @@
+{
+  "name": "生菜通用配方",
+  "stocks": [
+    {
+      "name": "A钙氮液(硝酸钙母液)",
+      "concentrations": {
+        "N": 10000.0,
+        "Ca": 13334.0,
+        "Fe": 134.0
+      },
+      "available_volume": 5.0
+    },
+    {
+      "name": "B磷钾液(磷酸二氢钾+硫酸镁母液)",
+      "concentrations": {
+        "P": 3572.0,
+        "K": 15000.0,
+        "Mg": 2858.0
+      },
+      "available_volume": 5.0
+    }
+  ],
+  "targets": {
+    "N":  {"target": 150.0, "abs_tolerance": 0.0},
+    "P":  {"target": 50.0,  "abs_tolerance": 0.0},
+    "K":  {"target": 210.0, "abs_tolerance": 0.0},
+    "Ca": {"target": 200.0, "abs_tolerance": 0.0},
+    "Mg": {"target": 40.0,  "abs_tolerance": 0.0},
+    "Fe": {"target": 2.0,   "abs_tolerance": 0.0}
+  },
+  "target_volume": 100.0,
+  "max_deviation": 0.05,
+  "water_min": 0.0
+}
